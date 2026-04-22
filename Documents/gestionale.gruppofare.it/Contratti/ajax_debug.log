@@ -1,0 +1,21 @@
+[03-Apr-2026 11:01:23 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gruprhsg_gestionale`.`clienti_contratti_documenti`, CONSTRAINT `fk_cliente_contratto` FOREIGN KEY (`cliente_contratto_id`) REFERENCES `clienti_contratti` (`id`) ON DELETE CASCADE) in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php:819
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php(819): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php on line 819
+[03-Apr-2026 11:02:04 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gruprhsg_gestionale`.`clienti_contratti_documenti`, CONSTRAINT `fk_cliente_contratto` FOREIGN KEY (`cliente_contratto_id`) REFERENCES `clienti_contratti` (`id`) ON DELETE CASCADE) in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php:819
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php(819): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php on line 819
+[16-Apr-2026 12:23:22 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 773
+[16-Apr-2026 12:24:02 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 773
+[16-Apr-2026 12:31:44 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 776
+[16-Apr-2026 12:31:55 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 776
+[16-Apr-2026 12:33:32 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 766
+[16-Apr-2026 12:33:39 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 766
+[16-Apr-2026 12:34:08 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 766
+[16-Apr-2026 12:45:45 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 766
+[16-Apr-2026 12:47:27 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 776
+[16-Apr-2026 12:47:44 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 776
+[16-Apr-2026 12:51:27 Europe/Rome] PHP Warning:  foreach() argument must be of type array|object, string given in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti_workflow.php on line 776

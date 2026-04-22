@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>💙 San Valentino - Per bimba 💙</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4a90e2 100%);
+      font-family: system-ui, -apple-system, sans-serif;
+      color: white;
+      overflow-x: hidden;
+      position: relative;
+      touch-action: manipulation;
+    }
+    /* POPUP INIZIALE - Mobile Optimized */
+    .intro-popup {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+      background: linear-gradient(135deg, rgba(30,60,114,0.98), rgba(74,144,226,0.95));
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      z-index: 100;
+      padding: 20px;
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9) translateY(20px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .intro-content {
+      text-align: center; padding: 40px 25px;
+      border-radius: 25px; background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(25px); box-shadow: 0 25px 70px rgba(0,0,0,0.5);
+      border: 2px solid rgba(74,144,226,0.6); width: 95%; max-width: 400px;
+    }
+    .intro-heart { font-size: clamp(80px, 25vw, 120px); margin-bottom: 15px; animation: heartbeat 1.5s infinite; }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+    }
+    .intro-title {
+      font-size: clamp(1.8em, 6vw, 2.4em);
+      margin-bottom: 15px; text-shadow: 0 0 25px #4a90e2;
+      font-weight: 600;
+    }
+    .intro-text {
+      font-size: clamp(1.1em, 4.5vw, 1.3em);
+      margin: 20px 0; line-height: 1.5; opacity: 0.95;
+    }
+    .intro-btn {
+      background: linear-gradient(45deg, #4a90e2, #357abd);
+      border: none; color: white;
+      padding: 18px 45px; font-size: clamp(1.2em, 5vw, 1.5em);
+      border-radius: 45px; cursor: pointer;
+      box-shadow: 0 15px 40px rgba(74,144,226,0.7);
+      transition: all 0.3s ease; font-weight: 600;
+      min-height: 60px; touch-action: manipulation;
+    }
+    .intro-btn:active {
+      transform: scale(0.97); box-shadow: 0 8px 25px rgba(74,144,226,0.5);
+    }
+    /* Cuori */
+    .hearts-bg {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+      pointer-events: none; z-index: 1;
+    }
+    .heart {
+      position: absolute; color: #4a90e2;
+      font-size: clamp(18px, 4vw, 25px);
+      animation: float 7s infinite linear;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+    }
+    /* Main Page */
+    .main-page {
+      min-height: 100vh; width: 100%;
+      display: none; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 25px; box-sizing: border-box;
+      animation: slideIn 0.8s ease-out;
+      scroll-snap-type: y mandatory;
+    }
+    .main-page.show { display: flex; }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .main-title {
+      font-size: clamp(2em, 8vw, 3em);
+      margin-bottom: 15px; text-shadow: 0 0 20px #4a90e2;
+      animation: pulse 2s infinite;
+      text-align: center;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+    .photo-frame {
+      width: clamp(180px, 45vw, 260px);
+      aspect-ratio: 1; border: 5px solid #4a90e2;
+      border-radius: 50%; overflow: hidden;
+      margin: 20px auto; box-shadow: 0 0 35px rgba(74,144,226,0.8);
+      animation: photoSpin 4s ease-in-out infinite;
+    }
+    @keyframes photoSpin {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(4deg); }
+    }
+    .photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+    .big-heart { 
+      font-size: clamp(60px, 18vw, 90px); 
+      color: #4a90e2; margin: 20px 0; 
+      animation: heartbeat 1.5s infinite; 
+    }
+    .message { 
+      font-size: clamp(1.1em, 4vw, 1.3em); 
+      margin: 25px 0; line-height: 1.6; 
+      text-align: center; opacity: 0.95; 
+      max-width: 90%; 
+    }
+    .surprise-btn {
+      background: linear-gradient(45deg, #4a90e2, #357abd);
+      border: none; color: white;
+      padding: 16px 35px; font-size: clamp(1.1em, 4.5vw, 1.3em);
+      border-radius: 40px; cursor: pointer;
+      box-shadow: 0 12px 30px rgba(74,144,226,0.6);
+      transition: all 0.3s; margin: 12px;
+      min-height: 55px; font-weight: 500; touch-action: manipulation;
+      font-family: system-ui, sans-serif;
+    }
+    .surprise-btn:active {
+      transform: scale(0.98); box-shadow: 0 6px 20px rgba(74,144,226,0.4);
+    }
+    .bear-btn { background: linear-gradient(45deg, #357abd, #2a5298) !important; }
+    /* Popup Video & Bear - Mobile */
+    .popup, .bear-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+      background: rgba(0,0,0,0.95); z-index: 50;
+      align-items: center; justify-content: center; padding: 20px;
+      display: none;
+    }
+    .popup.show, .bear-overlay.show { display: flex; }
+    .popup-content, .bear-content {
+      background: linear-gradient(135deg, #2a5298, #4a90e2);
+      padding: 30px 25px; border-radius: 22px;
+      text-align: center; width: 95%; max-height: 90vh;
+      overflow-y: auto; box-shadow: 0 25px 70px rgba(0,0,0,0.7);
+      animation: popupIn 0.5s ease-out;
+    }
+    @keyframes popupIn {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .close-popup, .bear-close {
+      position: absolute; top: 12px; right: 20px;
+      background: none; border: none; color: white;
+      font-size: clamp(2em, 7vw, 2.8em); cursor: pointer;
+    }
+    .video-container {
+      margin: 20px auto; border-radius: 18px;
+      overflow: hidden; box-shadow: 0 15px 45px rgba(74,144,226,0.6);
+      width: 100%; height: clamp(250px, 60vw, 450px);
+    }
+    video, iframe {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .bear { font-size: clamp(120px, 40vw, 200px); animation: bearWiggle 1s infinite; margin-bottom: 15px; }
+    @keyframes bearWiggle { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+    .bear-text { 
+      font-size: clamp(1.8em, 8vw, 2.5em); 
+      margin: 15px 0; text-shadow: 0 0 30px #4a90e2;
+      animation: textGlow 1.5s infinite; font-weight: 700;
+    }
+    @keyframes textGlow {
+      0%, 100% { text-shadow: 0 0 25px #4a90e2; }
+      50% { text-shadow: 0 0 45px #4a90e2, 0 0 65px #357abd; }
+    }
+  </style>
+</head>
+<body>
+  <!-- POPUP INIZIALE -->
+  <div class="intro-popup" id="introPopup">
+    <div class="intro-content">
+      <div class="intro-heart">💙</div>
+      <h1 class="intro-title">Bimba mia! 💙</h1>
+      <p class="intro-text">
+        C'è una sorpresa speciale per te...<br>
+        per il nostro primo San Valentino ✨
+      </p>
+      <button class="intro-btn" onclick="openMainPage()">
+        🎁 Apri il regalo! 💙
+      </button>
+    </div>
+  </div>
+
+  <!-- Cuori -->
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- MAIN -->
+  <div class="main-page" id="mainPage">
+    <h1 class="main-title">Buon San Valentino! 💙</h1>
+    <div class="big-heart">💙</div>
+    <div class="photo-frame">
+      <img src="noi.jpg" alt="Noi 💙" loading="lazy">
+    </div>
+    <p class="message">
+      Ti amo più di ieri, meno di domani.<br>
+      Sei tutto per me, bimba mia. 💙✨
+    </p>
+    <button class="surprise-btn" onclick="openPopup()">
+      🎥 Il nostro video 💙
+    </button>
+    <button class="surprise-btn bear-btn" onclick="showBear()">
+      🐻 Coccola gigante 💙
+    </button>
+    <p class="message" style="font-style: italic; opacity: 0.92;">
+      Fatto con tutto il mio cuore. 💙
+    </p>
+  </div>
+
+  <!-- VIDEO POPUP -->
+  <div class="popup" id="popup">
+    <button class="close-popup" onclick="closePopup()">×</button>
+    <div class="popup-content">
+      <h2 style="font-size: clamp(1.6em, 6vw, 2em);">Il tuo video speciale 💙</h2>
+      <p class="message" style="margin-bottom: 20px;">
+        Guardalo tutto, a schermo intero bimba... 💙
+      </p>
+      <div class="video-container">
+        <!-- VIDEO LOCALE MP4 -->
+        <video controls autoplay muted loop playsinline preload="auto">
+          <source src="video.mp4" type="video/mp4">
+          💙 Video per bimba 💙
+        </video>
+      </div>
+      <p style="font-size: clamp(1.1em, 4.5vw, 1.4em); margin-top: 20px;">
+        Ti amo per sempre. 💙✨
+      </p>
+    </div>
+  </div>
+
+  <!-- ORSETTO -->
+  <div class="bear-overlay" id="bearOverlay">
+    <div class="bear-content">
+      <div class="bear">🐻</div>
+      <div class="bear-text">TI AMO TANTISSIMO! 💙</div>
+      <p style="font-size: clamp(1.1em, 4.5vw, 1.3em); margin: 20px 0;">
+        Bimba, sei il mio mondo! 🤗💙
+      </p>
+      <button class="bear-close" onclick="closeBear()" style="padding: 15px 35px; font-size: 1.1em;">
+        Chiudi & Abbracciami! 💙
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Cuori ottimizzati mobile
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerHTML = '💙';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 2 + 5) + 's';
+      document.getElementById('heartsBg').appendChild(heart);
+      setTimeout(() => heart.remove(), 7500);
+    }
+    setInterval(createHeart, 400);
+
+    function openMainPage() {
+      document.getElementById('introPopup').style.display = 'none';
+      document.getElementById('mainPage').classList.add('show');
+    }
+    function openPopup() { document.getElementById('popup').classList.add('show'); }
+    function closePopup() { document.getElementById('popup').classList.remove('show'); }
+    function showBear() { document.getElementById('bearOverlay').classList.add('show'); }
+    function closeBear() { document.getElementById('bearOverlay').classList.remove('show'); }
+
+    // Gestione touch/swipe per chiudere popup
+    ['popup', 'bearOverlay'].forEach(id => {
+      const el = document.getElementById(id);
+      el.addEventListener('click', e => {
+        if (e.target === el) el.classList.remove('show');
+      });
+      let startY = 0;
+      el.addEventListener('touchstart', e => { startY = e.touches[0].clientY; });
+      el.addEventListener('touchend', e => {
+        const endY = e.changedTouches[0].clientY;
+        if (startY - endY > 50) el.classList.remove('show'); // Swipe up to close
+      });
+    });
+
+    // Preload media
+    window.addEventListener('load', () => {
+      const video = document.querySelector('video');
+      if (video) video.load();
+    });
+  </script>
+</body>
+</html>

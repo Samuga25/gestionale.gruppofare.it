@@ -1,0 +1,279 @@
+/* ---------- Reset & base ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Arial, sans-serif; }
+body { font-size: 15px; line-height: 1.5; background: #f5f6fa; color: #333; transition: background 0.3s, color 0.3s; }
+body.dark-theme { background: #181818; color: #f0f0f0; }
+
+/* ---------- Header ---------- */
+header { background: #fff; border-bottom: 2px solid #eaeaea; display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; position: sticky; top: 0; z-index: 10; }
+body.dark-theme header { background: #242424; border-color: #444; }
+
+.header-flex { display: flex; justify-content: space-between; width: 100%; align-items: center; }
+.logo { max-height: 60px; width: auto; }
+
+/* ---------- Buttons ---------- */
+.header-buttons button,
+.header-buttons .btn-logout { margin-left: 10px; cursor: pointer; padding: 6px 12px; border-radius: 6px; border: none; font-weight: 600; }
+.header-buttons button { background: #007bff; color: #fff; }
+.header-buttons button:hover { background: #0056b3; }
+.header-buttons .btn-logout { background: #dc3545; color: #fff; text-decoration: none; display: inline-block; }
+.header-buttons .btn-logout:hover { background: #a71d2a; }
+
+/* ---------- Sidebar ---------- */
+.sidebar { width: 220px; background: #fff; border-right: 1px solid #eaeaea; padding: 20px; position: fixed; height: 100%; }
+body.dark-theme .sidebar { background: #242424; border-color: #444; }
+.sidebar ul { list-style: none; }
+.sidebar a { display: block; padding: 10px 12px; margin: 5px 0; color: #333; text-decoration: none; border-radius: 8px; }
+body.dark-theme .sidebar a { color: #f0f0f0; }
+.sidebar a:hover { background: #f0f0f0; }
+body.dark-theme .sidebar a:hover { background: #333; }
+
+/* ---------- Main content ---------- */
+.main { margin-left: 240px; padding: 20px; }
+.container { max-width: 1000px; margin: auto; }
+.message { background: #d1ecf1; padding: 10px; margin-bottom: 10px; border-radius: 6px; color: #0c5460; }
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb { margin: 10px 0 20px; font-size: 14px; }
+.breadcrumb a { text-decoration: none; color: #007bff; }
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* ---------- Actions ---------- */
+.actions-bar { margin-bottom: 20px; }
+.actions-bar button { padding: 8px 14px; margin-right: 10px; border: none; border-radius: 6px; cursor: pointer; background: #28a745; color: #fff; }
+.actions-bar button:hover { background: #218838; }
+
+/* ---------- Table ---------- */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; border-bottom: 1px solid #ddd; text-align: left; font-size: 14px; }
+th { background: #f7f7f7; }
+body.dark-theme th, body.dark-theme td { border-color: #444; }
+
+/* ---------- Modali ---------- */
+.modal { display: none; position: fixed; z-index: 100; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.4); }
+.modal-content { background: #fff; margin: 10% auto; padding: 20px; border-radius: 12px; width: 90%; max-width: 400px; position: relative; }
+body.dark-theme .modal-content { background: #2a2a2a; color: #f0f0f0; }
+.close-modal { position: absolute; top: 10px; right: 15px; font-size: 20px; cursor: pointer; }
+.modal-content input[type="text"],
+.modal-content input[type="file"] { width: 100%; padding: 8px 10px; margin: 8px 0; border-radius: 6px; border: 1px solid #ccc; }
+.modal-content input[type="submit"] { width: 100%; padding: 10px; background: #007bff; color: #fff; border-radius: 6px; border: none; cursor: pointer; }
+.modal-content input[type="submit"]:hover { background: #0056b3; }
+/* ---------- Modale Permessi ---------- */
+.modal-permessi {
+    display: none; /* nascosta di default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.5);
+    transition: all 0.3s;
+}
+
+.modal-permessi .modal-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    position: relative;
+    transition: transform 0.3s;
+}
+body.dark .modal-permessi .modal-content { background: #2a2a2a; color: #f0f0f0; }
+
+.modal-permessi h2, .modal-permessi h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
+}
+body.dark .modal-permessi h2, body.dark .modal-permessi h3 { color: #f0f0f0; }
+
+.modal-permessi .close-modal {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #555;
+}
+body.dark .modal-permessi .close-modal { color: #ccc; }
+
+.modal-permessi form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-permessi label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+}
+body.dark .modal-permessi label { color: #f0f0f0; }
+
+.modal-permessi input[type="email"],
+.modal-permessi input[type="text"] {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+body.dark .modal-permessi input[type="email"],
+body.dark .modal-permessi input[type="text"] { background: #444; border-color: #666; color: #f0f0f0; }
+
+.modal-permessi input[type="submit"] {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.modal-permessi input[type="submit"]:hover { background: #0056b3; }
+
+.modal-permessi ul {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.modal-permessi ul li {
+    padding: 8px 10px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+body.dark .modal-permessi ul li { background: #3a3a3a; color: #f0f0f0; }
+
+.modal-permessi ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+body.dark .modal-permessi ul li a { color: #66b0ff; }
+
+.modal-permessi .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.folder-item {
+  border: 2px solid transparent;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.folder-item.drag-over {
+  border-color: #007bff;
+  background-color: #eef5ff;
+}
+
+
+.drive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+.drive-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 12px;
+  background: #fafafa;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.drive-card:hover {
+  background: #f0f7ff;
+  transform: translateY(-2px);
+}
+
+.view-toggle button {
+  margin-right: 8px;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.view-toggle button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+
+.folder-item.drag-over,
+.drive-card.folder-item.drag-over {
+  border-color: #007bff;
+  background-color: #e9f3ff;
+}
+
+tr.dragging {
+    opacity: 0.5;
+    background: #e9f0ff;
+}
+tr.drag-over {
+    background: #d0e6ff !important;
+    border: 2px dashed #007bff;
+}
+
+.multi-selected { border: 2px solid #007bff; background: rgba(0,123,255,0.1); }
+
+<style>
+/* Stili per drag and drop */
+tr[draggable="true"] {
+    cursor: move;
+}
+
+tr.dragging {
+    opacity: 0.5;
+    background-color: #e3f2fd !important;
+}
+
+tr.drag-over {
+    background-color: #c8e6c9 !important;
+    border: 2px dashed #4caf50;
+}
+
+.folder-item {
+    position: relative;
+}
+
+.folder-item::before {
+    content: "📁";
+    margin-right: 5px;
+}
+
+.file-item::before {
+    content: "📄";
+    margin-right: 5px;
+}
+
+/* Animazione per feedback visivo */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+tr.drag-over {
+    animation: shake 0.3s ease-in-out;
+}
+</style>

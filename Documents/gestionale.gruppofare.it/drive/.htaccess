@@ -1,0 +1,15 @@
+# Limiti Upload Illimitati
+php_value upload_max_filesize 10240M
+php_value post_max_size 10240M
+php_value max_execution_time 3600
+php_value max_input_time 3600
+php_value memory_limit 2048M
+php_value max_file_uploads 10000
+
+# Timeout più lunghi
+<IfModule mod_reqtimeout.c>
+    RequestReadTimeout body=0
+</IfModule>
+
+# Disabilita limiti Apache
+LimitRequestBody 0

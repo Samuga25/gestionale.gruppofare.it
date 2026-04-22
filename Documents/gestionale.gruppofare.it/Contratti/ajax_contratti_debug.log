@@ -1,0 +1,205 @@
+2026-02-18 09:37:12 - POST: Array
+(
+    [action] => uploaddocumento
+    [contrattoid] => 49
+    [tipodocumento] => contratto
+)
+
+FILES: Array
+(
+    [documento] => Array
+        (
+            [name] => Gallozzi.pdf
+            [full_path] => Gallozzi.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpq2ZDat
+            [error] => 0
+            [size] => 98480
+        )
+
+)
+
+
+[18-Feb-2026 10:37:12 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'nomefile' in 'INSERT INTO' in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php:141
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php(141): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php on line 141
+2026-02-18 09:38:23 - POST: Array
+(
+    [action] => uploaddocumento
+    [contrattoid] => 49
+    [tipodocumento] => contratto
+)
+
+FILES: Array
+(
+    [documento] => Array
+        (
+            [name] => Gallozzi.pdf
+            [full_path] => Gallozzi.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpRAMylp
+            [error] => 0
+            [size] => 98480
+        )
+
+)
+
+
+2026-02-18 09:43:03 - POST: Array
+(
+    [action] => uploaddocumento
+    [contrattoid] => 49
+    [tipodocumento] => documento_identita
+)
+
+FILES: Array
+(
+    [documento] => Array
+        (
+            [name] => Gallozzi.pdf
+            [full_path] => Gallozzi.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpwJQMvQ
+            [error] => 0
+            [size] => 98480
+        )
+
+)
+
+
+2026-02-18 09:43:09 - POST: Array
+(
+    [action] => uploaddocumento
+    [contrattoid] => 49
+    [tipodocumento] => google_maps
+)
+
+FILES: Array
+(
+    [documento] => Array
+        (
+            [name] => WhatsApp Image 2025-09-19 at 16.55.18.jpeg
+            [full_path] => WhatsApp Image 2025-09-19 at 16.55.18.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phplrsS1q
+            [error] => 0
+            [size] => 97102
+        )
+
+)
+
+
+2026-02-18 09:43:21 - POST: Array
+(
+    [action] => uploaddocumento
+    [contrattoid] => 49
+    [tipodocumento] => visura_catastale
+)
+
+FILES: Array
+(
+    [documento] => Array
+        (
+            [name] => DIDOnline_GLLSML06A25E289I.pdf
+            [full_path] => DIDOnline_GLLSML06A25E289I.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phplPKfYC
+            [error] => 0
+            [size] => 32994
+        )
+
+)
+
+
+2026-02-18 09:43:34 - POST: Array
+(
+    [action] => deletedocumento
+    [documentoid] => 16
+)
+
+FILES: Array
+(
+)
+
+
+[18-Feb-2026 10:43:34 Europe/Rome] PHP Warning:  Undefined array key "pathfile" in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php on line 201
+[18-Feb-2026 10:43:34 Europe/Rome] PHP Warning:  unlink(../): Is a directory in /home/gruprhsg/gestionale.gruppofare.it/Contratti/ajax_contratti.php on line 203
+2026-02-18 09:43:38 - POST: Array
+(
+    [action] => deletedocumento
+    [documentoid] => 16
+)
+
+FILES: Array
+(
+)
+
+
+2026-02-18 09:43:42 - POST: Array
+(
+    [action] => uploaddocumento
+    [contrattoid] => 49
+    [tipodocumento] => google_maps
+)
+
+FILES: Array
+(
+    [documento] => Array
+        (
+            [name] => Lettera di presentazione.pdf
+            [full_path] => Lettera di presentazione.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpOvChRA
+            [error] => 0
+            [size] => 17952
+        )
+
+)
+
+
+2026-02-18 09:43:52 - POST: Array
+(
+    [action] => uploaddocumento
+    [contrattoid] => 49
+    [tipodocumento] => documento_identita
+)
+
+FILES: Array
+(
+    [documento] => Array
+        (
+            [name] => DIDOnline_GLLSML06A25E289I.pdf
+            [full_path] => DIDOnline_GLLSML06A25E289I.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpGXklCM
+            [error] => 0
+            [size] => 32994
+        )
+
+)
+
+
+2026-02-18 09:43:58 - POST: Array
+(
+    [action] => uploaddocumento
+    [contrattoid] => 49
+    [tipodocumento] => google_maps
+)
+
+FILES: Array
+(
+    [documento] => Array
+        (
+            [name] => C2Storico_GALLOZZI.pdf
+            [full_path] => C2Storico_GALLOZZI.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phplJ9I0H
+            [error] => 0
+            [size] => 21758
+        )
+
+)
+
+
