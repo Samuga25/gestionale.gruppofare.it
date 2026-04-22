@@ -23,7 +23,7 @@ $iniziale = strtoupper(substr($nome, 0, 1));
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fare AI - GruppoFare</title>
+    <title>Fare AI - GruppoFare AI AI AI AI AI AI </title>
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="Loghi/LogoCRM.png">
