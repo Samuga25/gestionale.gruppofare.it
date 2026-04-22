@@ -23,7 +23,7 @@ $iniziale = strtoupper(substr($nome, 0, 1));
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fare AI - GruppoFare AI AI AI AI AI AI </title>
+    <title>Fare AI - GruppoFare </title>
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="Loghi/LogoCRM.png">
@@ -308,7 +308,7 @@ $iniziale = strtoupper(substr($nome, 0, 1));
     <div class="page-header">
         <img src="Loghi/fareai.png" alt="Fare AI" class="page-header-icon" onerror="this.style.display='none';">
         <h1>Fare AI</h1>
-        <p class="lead">Intelligenza Artificiale per il business test push </p>
+        <p class="lead">Intelligenza Artificiale per il business</p>
     </div>
 
     <!-- SECTIONS -->
