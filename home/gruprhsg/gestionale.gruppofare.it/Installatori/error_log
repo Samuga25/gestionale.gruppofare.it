@@ -1,1 +1,0 @@
-[10-Feb-2026 11:39:08 UTC] PHP Warning:  file_get_contents(italy-original.svg): Failed to open stream: No such file or directory in /home/gruprhsg/gestionale.gruppofare.it/Installatori/fix_svg.php on line 12
