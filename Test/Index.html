@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Per te 💙</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #d4e5ff, #6fa3ef);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #2c2c2c;
+      overflow-x: hidden;
+    }
+
+    /* SCHERMATA INIZIALE */
+    .intro-screen {
+      text-align: center;
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .intro-screen.hidden {
+      display: none;
+    }
+
+    .gift-box {
+      font-size: 120px;
+      margin-bottom: 20px;
+      animation: bounce 2s ease-in-out infinite;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .gift-box:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .intro-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(74, 144, 226, 0.5);
+      margin-bottom: 12px;
+    }
+
+    .intro-subtitle {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 30px;
+    }
+
+    .btn-open {
+      background: #fff;
+      color: #4a90e2;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 999px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-open:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(255, 255, 255, 0.4);
+    }
+
+    /* PAGINA PRINCIPALE */
+    .main-content {
+      display: none;
+      animation: slideIn 0.6s ease-out;
+    }
+
+    .main-content.show {
+      display: block;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .card {
+      background: #fff;
+      padding: 24px 24px 28px;
+      border-radius: 22px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      max-width: 380px;
+      width: 92%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    .card::before {
+      content: "♥";
+      position: absolute;
+      font-size: 220px;
+      color: rgba(111, 163, 239, 0.3);
+      right: -40px;
+      top: -90px;
+      transform: rotate(18deg);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .photo {
+      position: relative;
+      z-index: 1;
+      margin: 10px auto 16px;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 3px solid #4a90e2;
+    }
+
+    .photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .message {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+      min-height: 44px;
+    }
+
+    .question {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .heart {
+      width: 70px;
+      height: 70px;
+      background: #4a90e2;
+      position: relative;
+      transform: rotate(-45deg);
+      margin: 0 auto 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 10px 22px rgba(74, 144, 226, 0.6);
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      width: 70px;
+      height: 70px;
+      background: #4a90e2;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .heart::before {
+      top: -35px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 35px;
+      top: 0;
+    }
+
+    .heart:hover {
+      transform: rotate(-45deg) scale(1.07);
+      box-shadow: 0 14px 28px rgba(74, 144, 226, 0.75);
+    }
+
+    .heart.pop {
+      animation: pop 0.5s ease;
+    }
+
+    @keyframes pop {
+      0%   { transform: rotate(-45deg) scale(1); }
+      40%  { transform: rotate(-45deg) scale(1.4); }
+      70%  { transform: rotate(-45deg) scale(0.9); }
+      100% { transform: rotate(-45deg) scale(1); }
+    }
+
+    .buttons-main {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 6px;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .buttons-yesno {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn {
+      border: none;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: #4a90e2;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(74, 144, 226, 0.6);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #4a90e2;
+      border: 1px solid #4a90e2;
+    }
+
+    .btn-yes {
+      background: #32c682;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(50, 198, 130, 0.6);
+    }
+
+    .btn-no {
+      background: #fff;
+      color: #4a90e2;
+      border: 1px solid #4a90e2;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .final-message {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #3b7dd6;
+      font-weight: 600;
+      min-height: 20px;
+    }
+
+    .tiny-note {
+      font-size: 11px;
+      margin-top: 6px;
+      opacity: 0.75;
+    }
+
+    .floating-heart {
+      position: fixed;
+      color: rgba(74, 144, 226, 0.9);
+      font-size: 18px;
+      pointer-events: none;
+      animation: floatUp 1.3s ease-out forwards;
+      text-shadow: 0 0 8px rgba(74, 144, 226, 0.7);
+      z-index: 999;
+    }
+
+    @keyframes floatUp {
+      0%   { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-80px); opacity: 0; }
+    }
+
+    /* ORSETTO GIGANTE */
+    .bear-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+
+    .bear-overlay.show {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .bear-container {
+      text-align: center;
+      animation: bearPop 0.6s ease-out;
+    }
+
+    @keyframes bearPop {
+      0%   { transform: scale(0.3); opacity: 0; }
+      60%  { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .bear {
+      font-size: 180px;
+      margin-bottom: 20px;
+      animation: bearWiggle 1.5s ease-in-out infinite;
+    }
+
+    @keyframes bearWiggle {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-5deg); }
+      75% { transform: rotate(5deg); }
+    }
+
+    .bear-text {
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 0 20px rgba(74, 144, 226, 0.8);
+      margin-bottom: 20px;
+    }
+
+    .bear-close {
+      background: #4a90e2;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(74, 144, 226, 0.7);
+      transition: transform 0.2s ease;
+    }
+
+    .bear-close:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SCHERMATA INIZIALE -->
+  <div class="intro-screen" id="introScreen">
+    <div class="gift-box" id="giftBox">🎁</div>
+    <div class="intro-title">Ho qualcosa per te...</div>
+    <div class="intro-subtitle">Clicca sul regalo o sul bottone qui sotto 💙</div>
+    <button class="btn-open" id="btnOpenGift">Apri il regalo 🎉</button>
+  </div>
+
+  <!-- PAGINA PRINCIPALE -->
+  <div class="main-content" id="mainContent">
+    <div class="card">
+      <h1>CIAO AMORE MIO 💙</h1>
+      <div class="subtitle">Ho preparato un piccolo sito solo per te</div>
+
+      <div class="photo">
+        <!-- METTI QUI LA VOSTRA FOTO -->
+        <img src="noi.jpg" alt="Noi due">
+      </div>
+
+      <div class="message" id="mainMessage">
+        Ogni giorno con te è speciale, ma oggi volevo dirtelo in un modo diverso.
+        Scorri con il cuore e clicca i bottoni qui sotto. 💌
+      </div>
+
+      <div class="heart" id="heartBtn"></div>
+
+      <div class="question" id="question">
+        Vuoi scoprire quanto ti amo oggi?
+      </div>
+
+      <div class="buttons-main">
+        <button class="btn btn-primary" id="btnStart">Inizia la sorpresa 😍</button>
+        <button class="btn btn-outline" id="btnRandom">Dimmi qualcosa di dolce 💕</button>
+      </div>
+
+      <div class="buttons-yesno hidden" id="yesNoWrapper">
+        <button class="btn btn-yes" id="btnYes">Sì, tantissimo! 🥹</button>
+        <button class="btn btn-no" id="btnNo">No 😈</button>
+      </div>
+
+      <div class="final-message" id="finalMessage"></div>
+      <div class="tiny-note" id="tinyNote">
+        (Consigliato cliccare tutto, è a prova di <b>noi</b>. 😉)
+      </div>
+    </div>
+  </div>
+
+  <!-- ORSETTO OVERLAY -->
+  <div class="bear-overlay" id="bearOverlay">
+    <div class="bear-container">
+      <div class="bear">🧸</div>
+      <div class="bear-text">TI AMO TANTISSIMO</div>
+      <button class="bear-close" id="bearClose">Chiudi (e ricambia! 😘)</button>
+    </div>
+  </div>
+
+  <script>
+    const introScreen = document.getElementById("introScreen");
+    const mainContent = document.getElementById("mainContent");
+    const btnOpenGift = document.getElementById("btnOpenGift");
+    const giftBox = document.getElementById("giftBox");
+
+    const heartBtn = document.getElementById("heartBtn");
+    const btnStart = document.getElementById("btnStart");
+    const btnRandom = document.getElementById("btnRandom");
+    const btnYes = document.getElementById("btnYes");
+    const btnNo = document.getElementById("btnNo");
+    const yesNoWrapper = document.getElementById("yesNoWrapper");
+    const mainMessage = document.getElementById("mainMessage");
+    const finalMessage = document.getElementById("finalMessage");
+    const question = document.getElementById("question");
+    const tinyNote = document.getElementById("tinyNote");
+    const bearOverlay = document.getElementById("bearOverlay");
+    const bearClose = document.getElementById("bearClose");
+
+    const sweetMessages = [
+      "Sei la parte più bella delle mie giornate.",
+      "Con te mi sento a casa, ovunque siamo.",
+      "Il mio posto preferito è tra le tue braccia.",
+      "Ti scelgo oggi, domani e tutti i giorni che verranno.",
+      "Sei il mio miracolo quotidiano.",
+      "Ogni tuo sorriso vale più di mille parole."
+    ];
+
+    // APRI REGALO
+    function openGift() {
+      introScreen.classList.add("hidden");
+      mainContent.classList.add("show");
+    }
+
+    btnOpenGift.addEventListener("click", openGift);
+    giftBox.addEventListener("click", openGift);
+
+    function createFloatingHeart(x, y) {
+      const el = document.createElement("div");
+      el.className = "floating-heart";
+      el.textContent = "♥";
+      el.style.left = x + "px";
+      el.style.top = y + "px";
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 1300);
+    }
+
+    heartBtn.addEventListener("click", (e) => {
+      heartBtn.classList.remove("pop");
+      void heartBtn.offsetWidth;
+      heartBtn.classList.add("pop");
+
+      for (let i = 0; i < 3; i++) {
+        const offsetX = e.clientX + (Math.random() * 80 - 40);
+        const offsetY = e.clientY + (Math.random() * 40 - 20);
+        createFloatingHeart(offsetX, offsetY);
+      }
+
+      finalMessage.textContent = "Il mio cuore batte forte solo per te. 💖";
+    });
+
+    btnStart.addEventListener("click", () => {
+      mainMessage.textContent =
+        "Prima domanda: ti rendi conto di quanto sei importante per me?";
+      question.textContent = "Rispondi sinceramente qui sotto. 👇";
+      yesNoWrapper.classList.remove("hidden");
+      finalMessage.textContent = "";
+      tinyNote.textContent = "(Attenzione: il tasto 'No' non è molto collaborativo. 😏)";
+    });
+
+    btnRandom.addEventListener("click", () => {
+      const msg = sweetMessages[Math.floor(Math.random() * sweetMessages.length)];
+      finalMessage.textContent = msg;
+    });
+
+    btnYes.addEventListener("click", () => {
+      mainMessage.textContent =
+        "Allora sappi che TI AMO più di quanto riesca a spiegare con le parole.";
+      question.textContent =
+        "Vuoi passare questo San Valentino (e tutti quelli futuri) con me? 💍";
+      finalMessage.textContent =
+        "Grazie per essere la mia persona preferita in tutto l'universo. 🌙✨";
+      tinyNote.textContent = "(Se sei arrivata fin qui... stasera ti meriti una super coccola. 💗)";
+      
+      // MOSTRA ORSETTO DOPO 1 SECONDO
+      setTimeout(() => {
+        bearOverlay.classList.add("show");
+      }, 1000);
+    });
+
+    btnNo.addEventListener("mouseover", () => {
+      const wrapperRect = yesNoWrapper.getBoundingClientRect();
+      const btnRect = btnNo.getBoundingClientRect();
+
+      const maxX = wrapperRect.width - btnRect.width;
+      const maxY = wrapperRect.height - btnRect.height;
+
+      const randomX = Math.random() * maxX;
+      const randomY = Math.random() * maxY;
+
+      btnNo.style.position = "relative";
+      btnNo.style.left = randomX + "px";
+      btnNo.style.top = randomY + "px";
+
+      finalMessage.textContent = "Ehi! Non puoi dire di no, è contratto di amore a tempo indeterminato. 😏";
+    });
+
+    btnNo.addEventListener("click", () => {
+      finalMessage.textContent =
+        "Ops, sembra che il pulsante 'No' abbia cambiato idea: in realtà voleva dire 'Sì'! 😂";
+    });
+
+    bearClose.addEventListener("click", () => {
+      bearOverlay.classList.remove("show");
+    });
+  </script>
+</body>
+</html>

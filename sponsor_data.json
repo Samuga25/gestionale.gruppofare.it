@@ -1,0 +1,66 @@
+[
+    {
+        "id": "69e0bbc698af8",
+        "name": "Fiat Grande Panda",
+        "path": "Loghi\/sponsor\/sponsor_69e0bbc69853e.png",
+        "categoria": "Crossover",
+        "created_at": "2026-04-16 12:36:54",
+        "badge_testo": "PROMO VALIDA FINO AL 30 APRILE"
+    },
+    {
+        "id": "69e0bbd8a2462",
+        "name": "Peugeot 3008",
+        "path": "Loghi\/sponsor\/sponsor_69e0bbd8a1e23.png",
+        "categoria": "Suv",
+        "created_at": "2026-04-16 12:37:12",
+        "badge_testo": "PROMO VALIDA FINO AL 30 APRILE"
+    },
+    {
+        "id": "69de13b433732",
+        "name": "MG",
+        "path": "Loghi\/sponsor\/sponsor_69de13b433470.jpeg",
+        "categoria": "Suv",
+        "created_at": "2026-04-14 12:15:16",
+        "badge_testo": "PROMO DEL MESE"
+    },
+    {
+        "id": "69de13f298be7",
+        "name": "LeapMotor",
+        "path": "Loghi\/sponsor\/sponsor_69de13f29887d.jpeg",
+        "categoria": "Utilitaria",
+        "created_at": "2026-04-14 12:16:18",
+        "badge_testo": "PROMO DEL MESE"
+    },
+    {
+        "id": "69de13fec0a45",
+        "name": "Peugeot",
+        "path": "Loghi\/sponsor\/sponsor_69de13fec071a.jpeg",
+        "categoria": "Crossover",
+        "created_at": "2026-04-14 12:16:30",
+        "badge_testo": "PROMO DEL MESE"
+    },
+    {
+        "id": "69de140e6048e",
+        "name": "skoda",
+        "path": "Loghi\/sponsor\/sponsor_69de140e60174.jpeg",
+        "categoria": "Crossover",
+        "created_at": "2026-04-14 12:16:46",
+        "badge_testo": "PROMO DEL MESE"
+    },
+    {
+        "id": "69de1415aa5f5",
+        "name": "audi",
+        "path": "Loghi\/sponsor\/sponsor_69de1415aa102.jpeg",
+        "categoria": "Premium",
+        "created_at": "2026-04-14 12:16:53",
+        "badge_testo": "PROMO PREMIUM DEL MESE"
+    },
+    {
+        "id": "69de141e38f2c",
+        "name": "500",
+        "path": "Loghi\/sponsor\/sponsor_69de141e38c37.jpeg",
+        "categoria": "Utilitaria",
+        "created_at": "2026-04-14 12:17:02",
+        "badge_testo": "PROMO ELETTRICA"
+    }
+]

@@ -1,0 +1,109 @@
+[21-Apr-2026 10:58:39 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 10:58:39 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 10:58:46 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 10:58:46 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 20
+[21-Apr-2026 10:58:46 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 10:58:46 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 20
+[21-Apr-2026 11:00:41 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 11:00:41 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 20
+[21-Apr-2026 11:00:41 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:00:41 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 20
+[21-Apr-2026 11:00:42 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 11:00:42 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:00:57 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 11:00:57 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 20
+[21-Apr-2026 11:00:57 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:00:57 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 20
+[21-Apr-2026 11:01:01 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 11:01:01 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 20
+[21-Apr-2026 11:01:01 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:01:01 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 20
+[21-Apr-2026 11:03:37 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 11:03:37 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:04:40 Europe/Rome] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:46
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(46): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 46
+[21-Apr-2026 11:05:30 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 11:05:30 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 20
+[21-Apr-2026 11:05:30 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:05:30 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 20
+[21-Apr-2026 11:05:55 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 11:05:55 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 20
+[21-Apr-2026 11:05:55 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:05:55 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 20
+[21-Apr-2026 11:06:03 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 11:06:03 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 20
+[21-Apr-2026 11:06:03 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:06:03 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 20
+[21-Apr-2026 11:06:05 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 11:06:05 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 20
+[21-Apr-2026 11:06:05 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:06:05 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 20
+[21-Apr-2026 11:06:28 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:06:28 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 20
+[21-Apr-2026 11:35:19 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 17
+[21-Apr-2026 11:35:19 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/header.php on line 20
+[21-Apr-2026 11:35:19 Europe/Rome] PHP Warning:  Undefined variable $immagine_profilo in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 17
+[21-Apr-2026 11:35:19 Europe/Rome] PHP Warning:  Undefined variable $iniziale in /home/gruprhsg/gestionale.gruppofare.it/includes/footer_scripts.php on line 20
+[21-Apr-2026 12:42:21 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:41
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(41): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 41
+[21-Apr-2026 12:44:41 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:41
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(41): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 41
+[21-Apr-2026 13:04:35 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:41
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(41): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 41
+[21-Apr-2026 16:31:21 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:41
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(41): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 41
+[21-Apr-2026 16:32:53 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:41
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(41): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 41
+[21-Apr-2026 16:35:20 Europe/Rome] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:44
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(44): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 44
+[21-Apr-2026 16:40:33 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:44
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(44): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 44
+[21-Apr-2026 16:40:45 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:44
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(44): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 44
+[21-Apr-2026 16:41:13 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:44
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(44): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 44
+[21-Apr-2026 16:42:12 Europe/Rome] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:47
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(47): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 47
+[21-Apr-2026 16:44:34 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'cognome' cannot be null in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:51
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(51): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 51
+[21-Apr-2026 16:44:37 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'cognome' cannot be null in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php:51
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php(51): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/ren/nuova_richiesta.php on line 51

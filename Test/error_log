@@ -1,0 +1,40 @@
+[17-Apr-2026 13:32:41 UTC] PHP Warning:  imagettfbbox(): Could not find/open font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 16
+[17-Apr-2026 13:32:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 17
+[17-Apr-2026 13:32:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 17
+[17-Apr-2026 13:32:41 UTC] PHP Warning:  imagettftext(): Could not find/open font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 22
+[17-Apr-2026 13:32:41 UTC] PHP Warning:  imagettfbbox(): Could not find/open font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 16
+[17-Apr-2026 13:32:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 17
+[17-Apr-2026 13:32:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 17
+[17-Apr-2026 13:32:41 UTC] PHP Warning:  imagettftext(): Could not find/open font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 22
+[17-Apr-2026 13:33:12 UTC] PHP Warning:  imagettfbbox(): Could not find/open font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 16
+[17-Apr-2026 13:33:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 17
+[17-Apr-2026 13:33:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 17
+[17-Apr-2026 13:33:12 UTC] PHP Warning:  imagettftext(): Could not find/open font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 22
+[17-Apr-2026 13:33:12 UTC] PHP Warning:  imagettfbbox(): Could not find/open font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 16
+[17-Apr-2026 13:33:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 17
+[17-Apr-2026 13:33:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 17
+[17-Apr-2026 13:33:12 UTC] PHP Warning:  imagettftext(): Could not find/open font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 22
+[17-Apr-2026 13:36:19 UTC] PHP Warning:  imagettfbbox(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 23
+[17-Apr-2026 13:36:19 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:19 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:19 UTC] PHP Warning:  imagettftext(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 29
+[17-Apr-2026 13:36:19 UTC] PHP Warning:  imagettfbbox(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 23
+[17-Apr-2026 13:36:19 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:19 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:19 UTC] PHP Warning:  imagettftext(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 29
+[17-Apr-2026 13:36:32 UTC] PHP Warning:  imagettfbbox(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 23
+[17-Apr-2026 13:36:32 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:32 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:32 UTC] PHP Warning:  imagettftext(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 29
+[17-Apr-2026 13:36:32 UTC] PHP Warning:  imagettfbbox(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 23
+[17-Apr-2026 13:36:32 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:32 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:32 UTC] PHP Warning:  imagettftext(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 29
+[17-Apr-2026 13:36:38 UTC] PHP Warning:  imagettfbbox(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 23
+[17-Apr-2026 13:36:38 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:38 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:38 UTC] PHP Warning:  imagettftext(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 29
+[17-Apr-2026 13:36:38 UTC] PHP Warning:  imagettfbbox(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 23
+[17-Apr-2026 13:36:38 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:38 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 24
+[17-Apr-2026 13:36:38 UTC] PHP Warning:  imagettftext(): Could not read font in /home/gruprhsg/gestionale.gruppofare.it/Test/crea_immagine.php on line 29

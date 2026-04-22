@@ -1,0 +1,168 @@
+[22-Jan-2026 11:44:33 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gruprhsg_gestionale`.`pipeline_boards`, CONSTRAINT `pipeline_boards_ibfk_1` FOREIGN KEY (`created_by`) REFERENCES `utenti` (`id`) ON DELETE CASCADE) in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php:47
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php(47): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 47
+[22-Jan-2026 11:54:13 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gruprhsg_gestionale`.`pipeline_boards`, CONSTRAINT `pipeline_boards_ibfk_1` FOREIGN KEY (`created_by`) REFERENCES `utenti` (`id`) ON DELETE CASCADE) in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php:47
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php(47): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 47
+[22-Jan-2026 11:54:15 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gruprhsg_gestionale`.`pipeline_boards`, CONSTRAINT `pipeline_boards_ibfk_1` FOREIGN KEY (`created_by`) REFERENCES `utenti` (`id`) ON DELETE CASCADE) in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php:47
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php(47): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 47
+[22-Jan-2026 11:54:28 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gruprhsg_gestionale`.`pipeline_boards`, CONSTRAINT `pipeline_boards_ibfk_1` FOREIGN KEY (`created_by`) REFERENCES `utenti` (`id`) ON DELETE CASCADE) in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php:47
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php(47): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 47
+[22-Jan-2026 12:00:00 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gruprhsg_gestionale`.`pipeline_boards`, CONSTRAINT `pipeline_boards_ibfk_1` FOREIGN KEY (`created_by`) REFERENCES `utenti` (`id`) ON DELETE CASCADE) in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php:47
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php(47): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 47
+[22-Jan-2026 12:01:05 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gruprhsg_gestionale`.`pipeline_boards`, CONSTRAINT `pipeline_boards_ibfk_1` FOREIGN KEY (`created_by`) REFERENCES `utenti` (`id`) ON DELETE CASCADE) in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php:49
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php(49): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 49
+[22-Jan-2026 12:01:55 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'board_id' cannot be null in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php:76
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php(76): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 76
+[22-Jan-2026 12:02:15 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'board_id' cannot be null in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php:76
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php(76): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 76
+[22-Jan-2026 11:04:09 UTC] PHP Parse error:  Unclosed '{' on line 19 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 176
+[22-Jan-2026 11:05:25 UTC] PHP Parse error:  Unclosed '{' on line 19 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 174
+[22-Jan-2026 11:05:29 UTC] PHP Parse error:  Unclosed '{' on line 19 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 174
+[22-Jan-2026 11:05:35 UTC] PHP Parse error:  Unclosed '{' on line 19 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/ajax_progetti.php on line 174
+[22-Jan-2026 12:06:55 Europe/Rome] Errore creazione progetto: Cannot add or update a child row: a foreign key constraint fails (`gruprhsg_gestionale`.`pipeline_boards`, CONSTRAINT `pipeline_boards_ibfk_1` FOREIGN KEY (`created_by`) REFERENCES `utenti` (`id`) ON DELETE CASCADE)
+[22-Jan-2026 12:09:39 Europe/Rome] Board creata con successo. Board ID: 20
+[05-Feb-2026 13:01:08 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[26-Feb-2026 18:34:41 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[26-Feb-2026 18:34:44 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[26-Feb-2026 18:34:45 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[02-Mar-2026 10:36:29 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[02-Mar-2026 10:36:31 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[01-Apr-2026 14:55:53 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[01-Apr-2026 14:55:56 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[01-Apr-2026 14:55:59 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[02-Apr-2026 12:30:33 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[02-Apr-2026 19:05:05 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[02-Apr-2026 19:05:07 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[03-Apr-2026 11:37:25 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[03-Apr-2026 17:06:35 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[03-Apr-2026 17:23:05 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[08-Apr-2026 19:46:33 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[08-Apr-2026 19:46:35 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[14-Apr-2026 09:31:12 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[14-Apr-2026 10:38:33 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[14-Apr-2026 08:59:58 UTC] PHP Parse error:  Unclosed '{' on line 24 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 646
+[14-Apr-2026 09:00:00 UTC] PHP Parse error:  Unclosed '{' on line 24 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 646
+[14-Apr-2026 09:00:48 UTC] PHP Parse error:  Unclosed '{' on line 24 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 646
+[14-Apr-2026 09:00:51 UTC] PHP Parse error:  Unclosed '{' on line 24 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 646
+[14-Apr-2026 09:01:30 UTC] PHP Parse error:  Unclosed '{' on line 24 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 646
+[14-Apr-2026 09:02:15 UTC] PHP Parse error:  Unclosed '{' on line 24 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 646
+[14-Apr-2026 09:02:37 UTC] PHP Parse error:  Unclosed '{' on line 24 in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 646
+[16-Apr-2026 11:18:11 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[16-Apr-2026 15:00:15 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[17-Apr-2026 10:56:53 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
+[17-Apr-2026 10:56:55 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reparto' in 'SELECT' in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php:26
+Stack trace:
+#0 /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php(26): mysqli->prepare()
+#1 {main}
+  thrown in /home/gruprhsg/gestionale.gruppofare.it/Progetti/index.php on line 26
